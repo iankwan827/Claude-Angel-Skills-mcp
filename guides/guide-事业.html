@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>事业诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;transition:transform 0.2s;display:inline-block}
+.open>.toggle{color:#1a5276}
+.open>.toggle::before{transform:rotate(90deg)}
+
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💼 事业诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">事业格局</div>
+<div class="">
+  <div class="toggle">官印相生格</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">事业格局</div><div class="leaf-result">→ <strong>事业稳定、步步高升，适合公职、国企</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">财官相辅格</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">事业格局</div><div class="leaf-result">→ <strong>事业有动力、财富与地位双丰收，适合企业管理</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">官杀混杂格</div>
+  <div class="children">
+    <div class="leaf yellow"><div class="leaf-title">事业格局</div><div class="leaf-result">→ <strong>事业方向多变，需中年后稳定</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">无官无财格</div>
+  <div class="children">
+    <div class="leaf yellow"><div class="leaf-title">事业格局</div><div class="leaf-result">→ <strong>事业格局小，适合安稳工作</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">伤官见官格</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">事业格局</div><div class="leaf-result">→ <strong>事业多波折，需调整心态、晚发为宜</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="section-title">官杀状态树</div>
+<div class="">
+  <div class="toggle">是否有官杀</div>
+  <div class="children">
+    
+    <div class="">
+      <div class="toggle">有官杀</div>
+      <div class="children">
+        
+        <div class="">
+          <div class="toggle">旺</div>
+          <div class="children">
+            
+            <div class="">
+              <div class="toggle">为用</div>
+              <div class="children">
+                
+                <div class="">
+                  <div class="toggle">有根</div>
+                  <div class="children">
+                    <div class="leaf green"><div class="leaf-title">事业状态</div><div class="leaf-result">→ <strong>事业稳固，官杀得用事业顺</strong></div></div>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="toggle">无根</div>
+                  <div class="children">
+                    <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业易变动，但官杀为用仍有发展</div></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="">
+              <div class="toggle">为忌</div>
+              <div class="children">
+                
+                <div class="">
+                  <div class="toggle">有根</div>
+                  <div class="children">
+                    <div class="leaf red"><div class="leaf-title">事业状态</div><div class="leaf-result">→ <strong>事业多竞争、多波折，官杀为忌压力大</strong></div></div>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="toggle">无根</div>
+                  <div class="children">
+                    <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业压力减轻，但仍有竞争</div></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="">
+          <div class="toggle">衰</div>
+          <div class="children">
+            
+            <div class="">
+              <div class="toggle">为用</div>
+              <div class="children">
+                
+                <div class="">
+                  <div class="toggle">有根</div>
+                  <div class="children">
+                    <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业助力有限，但仍有发展机会</div></div>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="toggle">无根</div>
+                  <div class="children">
+                    <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业易变动，发展不稳定</div></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="">
+              <div class="toggle">为忌</div>
+              <div class="children">
+                
+                <div class="">
+                  <div class="toggle">有根</div>
+                  <div class="children">
+                    <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业压力减轻，但仍有阻碍</div></div>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="toggle">无根</div>
+                  <div class="children">
+                    <div class="leaf green"><div class="leaf-title">事业状态</div><div class="leaf-result">→ 事业阻碍小，发展相对顺利</div></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="">
+      <div class="toggle">无官杀</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">事业状态</div><div class="leaf-result">→ <strong>命局缺官杀，需看大运流年</strong></div></div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section-title">大运时机</div>
+<div class="">
+  <div class="toggle">官杀大运</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合做什么</div><div class="leaf-result">→ <strong>求职、晋升、创业</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">印星大运</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合做什么</div><div class="leaf-result">→ <strong>充电、考证、积累人脉</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">财星大运</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合做什么</div><div class="leaf-result">→ <strong>拓展业务，投资</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">食伤大运</div>
+  <div class="children">
+    <div class="leaf yellow"><div class="leaf-title">适合做什么</div><div class="leaf-result">→ <strong>转型，做顾问，培养接班人</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="section-title">事业阻碍</div>
+<div class="">
+  <div class="toggle">官杀混杂</div>
+  <div class="children">
+    <div class="leaf yellow"><div class="leaf-title">事业阻碍</div><div class="leaf-result">→ <strong>事业方向乱</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">伤官见官</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">事业阻碍</div><div class="leaf-result">→ <strong>事业多波折</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">印星为忌</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">事业阻碍</div><div class="leaf-result">→ <strong>压力大、事业受阻</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">正官为墓</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">事业阻碍</div><div class="leaf-result">→ <strong>事业受阻，易有口舌官司</strong> (应验率：85%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">月柱为墓</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">事业阻碍</div><div class="leaf-result">→ <strong>事业发展受阻，同辈竞争激烈</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="section-title">事业成功</div>
+<div class="">
+  <div class="toggle">食伤生财</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">成功因素</div><div class="leaf-result">→ <strong>靠技艺创意赚大钱，格局清纯则事业无波折</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">官印相生</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">成功因素</div><div class="leaf-result">→ <strong>步步高升，宜公职管理</strong> (应验率：95%)</div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">流年合印星</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">成功因素</div><div class="leaf-result">→ <strong>贵人来相助</strong> (应验率：90%)</div></div>
+  </div>
+</div>
+
+<div class="section-title">行业选择</div>
+<div class="">
+  <div class="toggle">甲乙木</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合行业</div><div class="leaf-result">→ <strong>东方木行业、文化、教育、宗教</strong></div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">丙丁火</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合行业</div><div class="leaf-result">→ <strong>南方火行业、能源、光电、服务业</strong></div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">戊己土</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合行业</div><div class="leaf-result">→ <strong>中央土行业、地产、建筑、农业</strong></div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">庚辛金</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合行业</div><div class="leaf-result">→ <strong>西方金行业、金融、机械、珠宝</strong></div></div>
+  </div>
+</div>
+
+<div class="">
+  <div class="toggle">壬癸水</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">适合行业</div><div class="leaf-result">→ <strong>北方水行业、贸易、物流、科技</strong></div></div>
+  </div>
+</div>
+
+<div class="note"><strong>断语：</strong>官杀得用事业顺，官杀为忌多竞争；正官稳定七杀险，选择职业要分明 (应验率：95%)</div>
+
+<div class="note"><strong>断语：</strong>喜用得令事业顺，忌神行业多不顺；五行匹配是根本，行业选择要精准 (应验率：95%)</div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    var parent = this.parentElement;
+    parent.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

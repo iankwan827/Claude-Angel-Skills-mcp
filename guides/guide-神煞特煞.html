@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神煞特煞诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>⚡ 神煞特煞诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">将军箭（男命血光）</div>
+<div><span class="toggle">将军箭查法（以生月对照时辰）</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">春季（寅卯辰月）</div><div class="leaf-result">→ 酉、戌、辰时为一箭</div></div>
+<div class="leaf yellow"><div class="leaf-title">夏季（巳午未月）</div><div class="leaf-result">→ 未、卯、子时为二箭</div></div>
+<div class="leaf yellow"><div class="leaf-title">秋季（申酉戌月）</div><div class="leaf-result">→ 寅、午、丑时为三箭</div></div>
+<div class="leaf yellow"><div class="leaf-title">冬季（亥子丑月）</div><div class="leaf-result">→ 亥、申、巳时为四箭</div></div>
+</div></div>
+
+<div><span class="toggle">真假判断</span><div class="children">
+<div><span class="toggle">真箭（时辰合口诀+日时相冲+无吉星）</span><div class="children">
+<div class="leaf red"><div class="leaf-title">（真箭）</div><div class="leaf-result">→ 大凶！逢冲箭之年必有金属类意外（刀/车祸/玻璃）</div></div>
+</div></div>
+<div><span class="toggle">假箭（时辰合口诀+无冲克）</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">（假箭）</div><div class="leaf-result">→ 小凶</div></div>
+</div></div>
+</div></div>
+
+<div><span class="toggle">实战组合</span><div class="children">
+<div class="leaf red"><div class="leaf-title">将军箭 + 羊刃</div><div class="leaf-result">→ 必主刀兵之灾，轻则残疾，重则死亡</div></div>
+<div class="leaf red"><div class="leaf-title">时箭日冲</div><div class="leaf-result">→ 伤自己</div></div>
+<div class="leaf red"><div class="leaf-title">日箭时冲</div><div class="leaf-result">→ 伤骨肉</div></div>
+</div></div>
+
+<div class="section-title">阎罗关（女命生死婚灾）</div>
+<div><span class="toggle">阎罗关查法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">通用：癸壬相连</div><div class="leaf-result">→ 阎王到</div></div>
+<div class="leaf yellow"><div class="leaf-title">日丑时寅 / 日寅时丑</div><div class="leaf-result">→ 女命愁</div></div>
+<div class="leaf yellow"><div class="leaf-title">时柱见癸亥 / 壬子</div><div class="leaf-result">→ 阎罗关</div></div>
+<div class="leaf yellow"><div class="leaf-title">女命专属：官星坐死绝之地</div><div class="leaf-result">→ 阎罗关</div></div>
+<div class="leaf yellow"><div class="leaf-title">日支为辰戌 + 时柱见丑寅</div><div class="leaf-result">→ 阎罗关</div></div>
+</div></div>
+
+<div><span class="toggle">真假判断</span><div class="children">
+<div class="leaf red"><div class="leaf-title">真关（合查法+冲克官星/食伤+无吉星）</div><div class="leaf-result">→ 大凶！重疾/意外死亡</div></div>
+<div class="leaf yellow"><div class="leaf-title">假关（合查法+仅冲闲神/有吉星）</div><div class="leaf-result">→ 小凶</div></div>
+</div></div>
+
+<div><span class="toggle">实战组合</span><div class="children">
+<div class="leaf red"><div class="leaf-title">阎罗关 + 伤官见官</div><div class="leaf-result">→ 女命必离婚</div></div>
+<div class="leaf red"><div class="leaf-title">阎罗关 + 白虎煞</div><div class="leaf-result">→ 生育易大出血</div></div>
+<div class="leaf red"><div class="leaf-title">阎罗关 + 天罗地网</div><div class="leaf-result">→ 易被囚禁（家暴/牢狱）</div></div>
+</div></div>
+
+<div><span class="toggle">轻重分级</span><div class="children">
+<div class="leaf red"><div class="leaf-title">一级（生死级）</div><div class="leaf-result">→ 真关+忌神当道 → 重疾/意外死亡</div></div>
+<div class="leaf yellow"><div class="leaf-title">二级（婚育级）</div><div class="leaf-result">→ 真关+冲官星 → 离婚/丈夫意外；冲食伤 → 流产/不孕</div></div>
+<div class="leaf yellow"><div class="leaf-title">三级（官非级）</div><div class="leaf-result">→ 假关+冲财星 → 小额官非/破财</div></div>
+</div></div>
+
+<div class="section-title">华盖星</div>
+<div><span class="toggle">华盖查法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">寅午戌见戌，巳酉丑见丑</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">申子辰见辰，亥卯未见未</div><div class="leaf-result"></div></div>
+</div></div>
+<div><span class="toggle">华盖特质</span><div class="children">
+<div class="leaf green"><div class="leaf-title">（华盖星）</div><div class="leaf-result">→ 孤高超然，性近僧道，爱整洁（甚至洁癖），爱面子，文笔好，有特殊才艺，谈钱色愧，不擅商场博弈</div></div>
+</div></div>
+
+<div class="section-title">太极星</div>
+<div><span class="toggle">太极星查法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">甲乙见子午，丙丁见卯酉</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">戊己见辰戌丑未，庚辛见寅亥</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">壬癸见巳申</div><div class="leaf-result"></div></div>
+</div></div>
+<div><span class="toggle">太极星特质</span><div class="children">
+<div class="leaf green"><div class="leaf-title">（太极星）</div><div class="leaf-result">→ 正直专一，有福有寿，利命理/八卦/风水</div></div>
+</div></div>
+
+<div class="section-title">吉神体系</div>
+<div><span class="toggle">天乙贵人</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">查法：甲见丑未，乙见子午...</div><div class="leaf-result">→ 至尊贵人</div></div>
+<div class="leaf green"><div class="leaf-title">（天乙贵人）</div><div class="leaf-result">→ 女命阎罗关第一解药</div></div>
+</div></div>
+<div><span class="toggle">文昌贵人</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">查法：甲见巳，乙见午...</div><div class="leaf-result">→ 学业考试</div></div>
+</div></div>
+<div><span class="toggle">天德 / 月德贵人</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">（天德/月德）</div><div class="leaf-result">→ 福寿</div></div>
+</div></div>
+<div><span class="toggle">禄神</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">（十干临官）</div><div class="leaf-result">→ 财运</div></div>
+</div></div>
+<div><span class="toggle">驿马</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">（日干查）</div><div class="leaf-result">→ 变动/出行</div></div>
+</div></div>
+
+<div class="section-title">凶煞体系</div>
+<div><span class="toggle">羊刃（血光意外）</span><div class="children">
+<div class="leaf red"><div class="leaf-title">查法：日干查（甲卯乙寅...）</div><div class="leaf-result">→ 血光意外</div></div>
+<div class="leaf red"><div class="leaf-title">羊刃逢冲</div><div class="leaf-result">→ 血光重重</div></div>
+<div class="leaf red"><div class="leaf-title">羊刃遇破</div><div class="leaf-result">→ 刀伤不断</div></div>
+</div></div>
+<div><span class="toggle">劫煞</span><div class="children">
+<div class="leaf red"><div class="leaf-title">（年支查）</div><div class="leaf-result">→ 破财/小人</div></div>
+</div></div>
+<div><span class="toggle">亡神</span><div class="children">
+<div class="leaf red"><div class="leaf-title">（年支查）</div><div class="leaf-result">→ 官非/困扰</div></div>
+</div></div>
+<div><span class="toggle">灾煞</span><div class="children">
+<div class="leaf red"><div class="leaf-title">（年支查）</div><div class="leaf-result">→ 意外/伤病</div></div>
+</div></div>
+
+<div class="section-title">组合原则</div>
+<div class="leaf green"><div class="leaf-title">吉 + 吉</div><div class="leaf-result">→ 大吉（天乙+文昌 → 学业事业双丰收）</div></div>
+<div class="leaf yellow"><div class="leaf-title">吉 + 凶</div><div class="leaf-result">→ 中和（天乙+羊刃 → 有贵人化灾）</div></div>
+<div class="leaf red"><div class="leaf-title">凶 + 凶</div><div class="leaf-result">→ 大凶（羊刃+劫煞 → 血光破财）</div></div>
+<div class="leaf green"><div class="leaf-title">用神优先</div><div class="leaf-result">→ 神煞为用神则吉，为忌神则凶</div></div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

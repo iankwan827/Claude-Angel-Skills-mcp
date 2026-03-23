@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学业诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;transition:transform 0.2s;display:inline-block}
+.open>.toggle{color:#1a5276}
+.open>.toggle::before{transform:rotate(90deg)}
+
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>📚 学业诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">正印</div>
+<div class="">
+  <div class="toggle">正印</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克（满足全部条件）</div><div class="leaf-result">→ <strong>学历必高</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ <strong>财星破印，学习分心，难获高学历</strong></div></div>
+                <div class="">
+                  <div class="toggle">受生（被官星生）</div>
+                  <div class="children">
+                    <div class="leaf green"><div class="leaf-title">官星也透干</div><div class="leaf-result">→ <strong>官印相生，透干清纯，学业自觉，考试必成</strong></div></div>
+                    <div class="leaf yellow"><div class="leaf-title">官星未透干</div><div class="leaf-result">→ 有官印相生条件，但未透干，助力打折</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 好的一面被约束，学历助力打折扣</div></div>
+                <div class="leaf green"><div class="leaf-title">受生（被官星生）</div><div class="leaf-result">→ 学业有管助，易得贵人扶持</div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 助力严重受损</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>厌学懒惰</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受生（被官星生）</div><div class="leaf-result">→ 忌神更旺，厌学更重</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 忌神被克，负面减轻</div></div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 负面被抑制，学业尚可</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被官星生）</div><div class="leaf-result">→ 忌神被生，运更差</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 忌神被克，反而对学业有利</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>学业严重受阻，贵人运差</strong></div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被官星生）</div><div class="leaf-result">→ 印弱有官星相生，学业有转机</div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 学习助力严重受损</div></div>
+              </div>
+            </div>
+            <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 学习吃力但尚可补救，需补印（学习环境、文昌位）</div></div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 负面影响减轻</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 忌神被克，反而对学业有利</div></div>
+              </div>
+            </div>
+            <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 印忌弱，影响力有限</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">偏印</div>
+<div class="">
+  <div class="toggle">偏印</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>厌学叛逆，容易辍学</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受生（被官星生）</div><div class="leaf-result">→ <strong>厌学懒惰，多学少成</strong></div></div>
+                <div class="leaf orange"><div class="leaf-title">七杀也旺（跨组合）</div><div class="leaf-result">→ <strong>偏印不服管教，叛逆，容易辍学</strong></div></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 偏印忌被抑制，有助于学业</div></div>
+                <div class="leaf green"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 忌神被克，负面减轻，对学业有利</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="leaf green"><div class="leaf-title">受制</div><div class="leaf-result">→ 正面被约束，负面也被抑制，有助于学业</div></div>
+            <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 领悟力强，但可能多疑</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 偏印弱而有力，影响有限</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">七杀</div>
+<div class="">
+  <div class="toggle">七杀</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>压力过大，精神紧张，可能厌学</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受生（被财星生）</div><div class="leaf-result">→ <strong>压力过大，厌学</strong></div></div>
+                <div class="leaf orange"><div class="leaf-title">偏印也旺（跨组合）</div><div class="leaf-result">→ <strong>初中辍学</strong>（七杀压头+偏印叛逆内耗）</div></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 七杀忌受抑，压力减轻</div></div>
+                <div class="leaf green"><div class="leaf-title">受克（被印星克）</div><div class="leaf-result">→ <strong>学业压力减轻</strong></div></div>
+                <div class="leaf orange"><div class="leaf-title">偏印也受制</div><div class="leaf-result">→ <strong>读书很好，能上硕士</strong>（实战验证！1987女命）</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="leaf green"><div class="leaf-title">不受制</div><div class="leaf-result">→ 越有压力越努力，早年学业成</div></div>
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 压力被管住，能转化动力</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被印星克）</div><div class="leaf-result">→ 魄力受限</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被财星生）</div><div class="leaf-result">→ 压力增大</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 魄力不足，进取心有限</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">正官</div>
+<div class="">
+  <div class="toggle">正官</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="leaf green"><div class="leaf-title">不受制</div><div class="leaf-result">→ <strong>自律性强，守法自律，学业稳定</strong></div></div>
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 自律性被约束，学业助力打折</div></div>
+                <div class="leaf green"><div class="leaf-title">受生（被印星生）</div><div class="leaf-result">→ <strong>学业运佳，贵人多助</strong></div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被财星克）</div><div class="leaf-result">→ 自律力受损</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="leaf red"><div class="leaf-title">不受制</div><div class="leaf-result">→ 缺乏学习目标</div></div>
+            <div class="leaf yellow"><div class="leaf-title">受制</div><div class="leaf-result">→ 学业尚可</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 正官弱而有情，学业助力有限但尚可</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">食神</div>
+<div class="">
+  <div class="toggle">食神</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="leaf green"><div class="leaf-title">不受制</div><div class="leaf-result">→ <strong>食神泄秀，聪明外露，成绩顶尖</strong></div></div>
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 才华被约束，表达受限</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被印星克）</div><div class="leaf-result">→ 才华发挥受限</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 耗泄过度，思绪杂乱</div></div>
+            <div class="leaf yellow"><div class="leaf-title">受制</div><div class="leaf-result">→ 耗泄减轻</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 表达能力尚可</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">伤官</div>
+<div class="">
+  <div class="toggle">伤官</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为用</div>
+          <div class="children">
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 创造力被约束，魄力也受限</div></div>
+                <div class="leaf green"><div class="leaf-title">受克（被印星克）</div><div class="leaf-result">→ <strong>伤官配印，学术研究能力强，学业有成</strong></div></div>
+              </div>
+            </div>
+            <div class="leaf red"><div class="leaf-title">不受制</div><div class="leaf-result">→ 聪明但叛逆，不服管教，学习自律性差</div></div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌</div>
+          <div class="children">
+            <div class="leaf red"><div class="leaf-title">不受制</div><div class="leaf-result">→ <strong>叛逆心强，学习态度差</strong></div></div>
+            <div class="leaf yellow"><div class="leaf-title">受制</div><div class="leaf-result">→ 叛逆被抑制</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+        <div class="leaf yellow"><div class="leaf-title">不受制</div><div class="leaf-result">→ 创造力有限但尚可</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">神煞</div>
+<div class="">
+  <div class="toggle">文昌贵人</div>
+  <div class="children">
+    <div class="leaf yellow"><div class="leaf-title">年柱文昌</div><div class="leaf-result">→ 少年学业运佳，早慧</div></div>
+    <div class="leaf green"><div class="leaf-title">月柱文昌</div><div class="leaf-result">→ 学业助力最强，考试运佳</div></div>
+    <div class="leaf green"><div class="leaf-title">日柱文昌</div><div class="leaf-result">→ 自学能力强，学历稳定</div></div>
+    <div class="leaf yellow"><div class="leaf-title">时柱文昌</div><div class="leaf-result">→ 晚年学业运，或子女学业好</div></div>
+  </div>
+</div>
+
+<div class="note"><strong>缰绳原则：</strong>吉神（正官、正印、正财、食神）受制=好被约束→变差；凶神（七杀、伤官、劫财、偏印）受制=坏被约束→变好。</div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    var parent = this.parentElement;
+    parent.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

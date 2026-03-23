@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>婚姻感情诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💍 婚姻感情诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">基础：配偶星</div>
+<div><span class="toggle">男命</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">正财为用</div><div class="leaf-result">→ 贤惠持家、务实稳重、重视家庭（属木身材好正直，属火热情有口碑，属土稳重靠谱，属金精致果断，属水聪明体贴）</div></div>
+<div class="leaf yellow"><div class="leaf-title">偏财为用</div><div class="leaf-result">→ 颜值高、性格活泼、懂情趣（偏财为忌易遇拜金、不稳定的异性）</div></div>
+</div></div>
+<div><span class="toggle">女命</span><div class="children">
+<div class="leaf green"><div class="leaf-title">正官为用</div><div class="leaf-result">→ 人品好、性格稳重、有稳定职业（属金挺拔果断，属木正直温和，属水聪明体贴，属火热情有口碑，属土踏实可靠）</div></div>
+<div class="leaf yellow"><div class="leaf-title">七杀为用</div><div class="leaf-result">→ 有魄力、有社会地位，慕强属性（七杀为忌易遇控制欲强、脾气差的异性）</div></div>
+</div></div>
+
+<div class="section-title">婚恋风险</div>
+<div><span class="toggle">日柱同五行婚姻风险</span><div class="children">
+<div><span class="toggle">高风险条件</span><div class="children">
+<div class="leaf red"><div class="leaf-title">日干身旺 + 日支为忌神</div><div class="leaf-result">→ 婚姻不稳定风险高</div></div>
+<div class="leaf red"><div class="leaf-title">日支被刑冲克害</div><div class="leaf-result">→ 婚姻有摩擦</div></div>
+<div class="leaf red"><div class="leaf-title">孤鸾煞 / 八专淫欲煞</div><div class="leaf-result">→ 婚姻多波折</div></div>
+</div></div>
+<div><span class="toggle">安全条件</span><div class="children">
+<div class="leaf green"><div class="leaf-title">日干身弱，日支比肩能帮扶</div><div class="leaf-result">→ 夫妻同心，婚姻反而稳定</div></div>
+<div class="leaf green"><div class="leaf-title">日柱恰好是用神</div><div class="leaf-result">→ 对婚姻有积极影响</div></div>
+</div></div>
+<div class="leaf yellow"><div class="leaf-title">结论</div><div class="leaf-result">→ 日柱同五行对婚姻影响是中性的，非"必有离婚"，需结合日主旺衰+用神忌神+是否被刑冲综合判断</div></div>
+</div></div>
+
+<div><span class="toggle">婚灾信号</span><div class="children">
+<div class="leaf red"><div class="leaf-title">流年/大运冲克日支（夫妻宫）</div><div class="leaf-result">→ 婚姻变动</div></div>
+<div class="leaf red"><div class="leaf-title">天克地冲冲克配偶星</div><div class="leaf-result">→ 配偶健康危机</div></div>
+<div class="leaf red"><div class="leaf-title">冲克用神</div><div class="leaf-result">→ 核心利益受损，凶性最强</div></div>
+</div></div>
+
+<div><span class="toggle">夫妻宫逢穿</span><div class="children">
+<div class="leaf red"><div class="leaf-title">夫妻宫穿了夫妻星的那个字</div><div class="leaf-result">→ 必离婚或配偶死</div></div>
+</div></div>
+
+<div class="section-title">婚恋断语汇总</div>
+<div><span class="toggle">日支是羊刃，另处再有一羊刃</span><div class="children"><div class="leaf red"><div class="leaf-title">（日支羊刃+别处再见羊刃）</div><div class="leaf-result">→ 配偶早丧</div></div></div></div>
+<div><span class="toggle">日坐羊刃逢冲</span><div class="children"><div class="leaf red"><div class="leaf-title">（日柱地支羊刃被冲）</div><div class="leaf-result">→ 配偶必见血光手术，严重者早亡</div></div></div></div>
+<div><span class="toggle">财星被比劫重重包围（男命）</span><div class="children"><div class="leaf red"><div class="leaf-title">（比劫重重围财）</div><div class="leaf-result">→ 配偶易有意外之灾</div></div></div></div>
+<div><span class="toggle">官星被伤官贴身相克（女命）</span><div class="children"><div class="leaf red"><div class="leaf-title">（伤官贴身克官）</div><div class="leaf-result">→ 配偶易有意外之灾</div></div></div></div>
+<div><span class="toggle">日支被月支、时支双冲</span><div class="children"><div class="leaf red"><div class="leaf-title">（日支被双重冲克）</div><div class="leaf-result">→ 婚姻必破，配偶健康堪忧</div></div></div></div>
+<div><span class="toggle">日刃时见偏印</span><div class="children"><div class="leaf red"><div class="leaf-title">（日刃+时柱偏印）</div><div class="leaf-result">→ 妻必有病灾</div></div></div></div>
+<div><span class="toggle">日坐华盖合驿马</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（日支华盖+合驿马）</div><div class="leaf-result">→ 同床异梦</div></div></div></div>
+<div><span class="toggle">时日两对冲</span><div class="children"><div class="leaf red"><div class="leaf-title">（时柱冲日柱）</div><div class="leaf-result">→ 分道扬镳</div></div></div></div>
+<div><span class="toggle">二财争合日主干（男命）</span><div class="children"><div class="leaf red orange"><div class="leaf-title">（两财争合日干）</div><div class="leaf-result">→ 三妻四妾命里安</div></div></div></div>
+<div><span class="toggle">二官争合日主干（女命）</span><div class="children"><div class="leaf red orange"><div class="leaf-title">（两官争合日干）</div><div class="leaf-result">→ 重婚再嫁命不凡</div></div></div></div>
+<div><span class="toggle">无财+比劫旺（男命）</span><div class="children"><div class="leaf red"><div class="leaf-title">（无财星且比劫旺）</div><div class="leaf-result">→ 孤独命，终生无嫁娶</div></div></div></div>
+<div><span class="toggle">无官+伤官羊刃旺（女命）</span><div class="children"><div class="leaf red"><div class="leaf-title">（无官星且伤官羊刃旺）</div><div class="leaf-result">→ 孤独命，终生无嫁娶</div></div></div></div>
+
+<div class="section-title">神煞与婚恋</div>
+<div><span class="toggle">孤辰 / 寡宿</span><div class="children"><div class="leaf red"><div class="leaf-title">（孤辰或寡宿）</div><div class="leaf-result">→ 婚姻不顺，晚婚</div></div></div></div>
+<div><span class="toggle">阳刃重重</span><div class="children"><div class="leaf red"><div class="leaf-title">（阳刃重重）</div><div class="leaf-result">→ 婚恋三角关系</div></div></div></div>
+<div><span class="toggle">红鸾在日支</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（红鸾在日支）</div><div class="leaf-result">→ 早恋信号</div></div></div></div>
+<div><span class="toggle">咸池（桃花煞）</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（桃花煞）</div><div class="leaf-result">→ 异性缘佳，但易有感情纠纷</div></div></div></div>
+<div><span class="toggle">阎罗关（女命）</span><div class="children"><div class="leaf red"><div class="leaf-title">（女命阎罗关）</div><div class="leaf-result">→ 婚灾、生死关口</div></div></div></div>
+
+<div class="section-title">感情敏感程度（性冷淡/性热）</div>
+<div><span class="toggle">男命性冷淡特征</span><div class="children">
+<div class="leaf red"><div class="leaf-title">水弱或无水（肾水不足）</div><div class="leaf-result">→ 阳痿早泄，性欲减退</div></div>
+<div class="leaf red"><div class="leaf-title">印星过旺</div><div class="leaf-result">→ 理性压制欲望，道德感过强</div></div>
+<div class="leaf yellow"><div class="leaf-title">比劫重重</div><div class="leaf-result">→ 对女性兴趣缺乏，性关系自私</div></div>
+<div class="leaf yellow"><div class="leaf-title">官杀混杂</div><div class="leaf-result">→ 压力过大，性焦虑</div></div>
+<div class="leaf yellow"><div class="leaf-title">日坐正印</div><div class="leaf-result">→ 对伴侣缺乏性冲动，婚姻平淡</div></div>
+</div></div>
+<div><span class="toggle">女命性冷淡特征</span><div class="children">
+<div class="leaf red"><div class="leaf-title">水弱水寒</div><div class="leaf-result">→ 宫寒，性冷淡，月经不调</div></div>
+<div class="leaf red"><div class="leaf-title">印星过旺</div><div class="leaf-result">→ 情感冷漠，对性持羞耻感</div></div>
+<div class="leaf yellow"><div class="leaf-title">财星空亡</div><div class="leaf-result">→ 对男女之事无欲望</div></div>
+<div class="leaf yellow"><div class="leaf-title">日坐正印</div><div class="leaf-result">→ 对丈夫缺乏性热情</div></div>
+</div></div>
+
+<div class="section-title">性爱姿势偏好</div>
+<div><span class="toggle">伤官旺</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（伤官旺）</div><div class="leaf-result">→ 性观念开放，喜欢创新姿势</div></div></div></div>
+<div><span class="toggle">正官旺</span><div class="children"><div class="leaf green"><div class="leaf-title">（正官旺）</div><div class="leaf-result">→ 偏好传统姿势</div></div></div></div>
+<div><span class="toggle">日支坐桃花+沐浴</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（日支桃花+沐浴）</div><div class="leaf-result">→ 姿势多样，性观念开放</div></div></div></div>
+<div><span class="toggle">日支坐偏财</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（日支偏财）</div><div class="leaf-result">→ 喜欢尝试新姿势</div></div></div></div>
+<div><span class="toggle">时柱劫财旺</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（时柱劫财旺）</div><div class="leaf-result">→ 欲望强烈</div></div></div></div>
+
+<div class="section-title">配偶年龄差距</div>
+<div><span class="toggle">判断原则</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">食伤生财组合</div><div class="leaf-result">→ 倾向小异性</div></div>
+<div class="leaf yellow"><div class="leaf-title">官印旺组合</div><div class="leaf-result">→ 倾向大异性</div></div>
+<div class="leaf yellow"><div class="leaf-title">年柱配偶星</div><div class="leaf-result">→ 年龄差大</div></div>
+<div class="leaf yellow"><div class="leaf-title">时柱配偶星</div><div class="leaf-result">→ 年龄差小</div></div>
+</div></div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

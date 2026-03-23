@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>财运诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;transition:transform 0.2s;display:inline-block}
+.open>.toggle{color:#1a5276}
+.open>.toggle::before{transform:rotate(90deg)}
+
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💰 财运诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">财星树</div>
+<div class="">
+  <div class="toggle">财星</div>
+  <div class="children">
+
+    <div class="">
+      <div class="toggle">旺相</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为喜用</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>财运好，理财有道（90%）</strong></div></div>
+                <div class="leaf green"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ <strong>食神生财，技艺创意发财（90%）</strong></div></div>
+                <div class="leaf green"><div class="leaf-title">去生官星</div><div class="leaf-result">→ <strong>财官相生，富贵双全（90%）</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ <strong>比劫重重克财，破财、财来财去（90%）</strong></div></div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 财运好但受约束，理财能力打折</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 食神生财但受制，技艺发财有阻碍</div></div>
+                <div class="leaf yellow"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 财官相生但受制，富贵有波折</div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 比劫克财且财星受制，破财严重</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌神</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ <strong>财星为忌旺相，理财观念差，易破财</strong></div></div>
+                <div class="leaf red"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 忌神更旺，技艺投资易亏损</div></div>
+                <div class="leaf red"><div class="leaf-title">去生官星</div><div class="leaf-result">→ <strong>忌神更旺，富贵反成负担</strong></div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 忌神被克，反而对财运有利</div></div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 忌神被制，财运负面减轻</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 忌神更旺，受制，技艺投资有风险</div></div>
+                <div class="leaf yellow"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 忌神更旺，受制，富贵有波折</div></div>
+                <div class="leaf green"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 忌神被克且受制，财运反而好转</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">衰</div>
+      <div class="children">
+
+        <div class="">
+          <div class="toggle">为喜用</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf yellow"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 财运一般，需努力积累</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 食神生财但财星弱，技艺收入有限</div></div>
+                <div class="leaf yellow"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 财官相生但财星弱，富贵程度有限</div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 财星弱又被克，财运差</div></div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf red"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 财运差，理财能力弱</div></div>
+                <div class="leaf red"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 食神生财但财星弱且受制，技艺难变现</div></div>
+                <div class="leaf red"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 财官相生但财星弱且受制，富贵难求</div></div>
+                <div class="leaf red"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 财星弱且受制又被克，财运极差</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="">
+          <div class="toggle">为忌神</div>
+          <div class="children">
+
+            <div class="">
+              <div class="toggle">不受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 忌神衰弱，财运反而不错</div></div>
+                <div class="leaf green"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 忌神被生但弱，技艺投资风险小</div></div>
+                <div class="leaf yellow"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 忌神更旺，忌神弱但去生官星，受制，富贵有阻</div></div>
+                <div class="leaf yellow"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 忌神被克，财运平稳</div></div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="toggle">受制</div>
+              <div class="children">
+                <div class="leaf green"><div class="leaf-title">无明显生克</div><div class="leaf-result">→ 忌神衰弱且受制，财运良好</div></div>
+                <div class="leaf green"><div class="leaf-title">受生（被食神生）</div><div class="leaf-result">→ 忌神被生但弱且受制，技艺投资安全</div></div>
+                <div class="leaf yellow"><div class="leaf-title">去生官星</div><div class="leaf-result">→ 忌神更旺，忌神弱但去生官星，受制，富贵有阻</div></div>
+                <div class="leaf green"><div class="leaf-title">受克（被比劫克）</div><div class="leaf-result">→ 忌神被克且受制，财运很好</div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">财星入库</div>
+      <div class="children">
+        <div class="leaf green"><div class="leaf-title">逢冲</div><div class="leaf-result">→ <strong>财运爆发，意外之财（90%）</strong></div></div>
+        <div class="leaf red"><div class="leaf-title">未逢冲</div><div class="leaf-result">→ <strong>财星入墓，财运停滞（85%）</strong></div></div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">财星空亡</div>
+      <div class="children">
+        <div class="leaf red"><div class="leaf-title">财星为喜用空亡</div><div class="leaf-result">→ <strong>财源不畅，难聚财（85%）</strong></div></div>
+        <div class="leaf green"><div class="leaf-title">财星为忌神空亡</div><div class="leaf-result">→ <strong>忌神空则灾祸减轻（90%）</strong></div></div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="toggle">流年合财星</div>
+      <div class="children">
+        <div class="leaf green"><div class="leaf-title">财星为喜用</div><div class="leaf-result">→ <strong>财富有增长（90%）</strong></div></div>
+        <div class="leaf red"><div class="leaf-title">财星为忌神</div><div class="leaf-result">→ 财富有波动，需谨慎</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-title">发财类型</div>
+<div class="">
+  <div class="toggle">发财类型</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">食神生财</div><div class="leaf-result">→ <strong>技艺创意发财（90%）</strong></div></div>
+    <div class="leaf green"><div class="leaf-title">财官相生</div><div class="leaf-result">→ <strong>富贵双全（90%）</strong></div></div>
+    <div class="leaf green"><div class="leaf-title">财库充盈</div><div class="leaf-result">→ <strong>积累型财富（90%）</strong></div></div>
+  </div>
+</div>
+
+<div class="section-title">破财类型</div>
+<div class="">
+  <div class="toggle">破财类型</div>
+  <div class="children">
+    <div class="leaf red"><div class="leaf-title">比劫重重克财</div><div class="leaf-result">→ <strong>破财、财来财去（90%）</strong></div></div>
+    <div class="leaf red"><div class="leaf-title">劫财旺而透干</div><div class="leaf-result">→ <strong>破财（85%）</strong></div></div>
+    <div class="leaf red"><div class="leaf-title">比劫夺财</div><div class="leaf-result">→ <strong>因朋友破财（85%）</strong></div></div>
+  </div>
+</div>
+
+<div class="section-title">理财建议</div>
+<div class="">
+  <div class="toggle">理财建议</div>
+  <div class="children">
+    <div class="leaf green"><div class="leaf-title">财星为用</div><div class="leaf-result">→ <strong>理财观念好，宜稳扎稳打积累</strong></div></div>
+    <div class="leaf yellow"><div class="leaf-title">比劫旺</div><div class="leaf-result">→ <strong>不宜冒险投资，守成为主</strong></div></div>
+    <div class="leaf yellow"><div class="leaf-title">财星虚浮</div><div class="leaf-result">→ <strong>非爆发型，宜长期定投</strong></div></div>
+  </div>
+</div>
+
+<div class="section-title">富贵贫贱</div>
+<div class="">
+  <div class="toggle">富贵贫贱</div>
+  <div class="children">
+    <div class="leaf orange"><div class="leaf-title">断语</div><div class="leaf-result">→ <strong>五行偏枯难长寿，身弱贫贱带伤痛；一卯二卯，富贵到老；禄多则贫，马多则病</strong></div></div>
+  </div>
+</div>
+
+<div class="note">
+<strong>来源索引：</strong><br>
+• 第十一节课（戊土全解）<br>
+• 第十四节课（壬水全解）<br>
+• 第十五节课（癸水全解）<br>
+• 理华千山派28式/财运篇<br>
+• 第十三节课（大运流年天克地冲）
+</div>
+
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

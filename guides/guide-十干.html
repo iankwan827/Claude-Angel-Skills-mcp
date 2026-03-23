@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>十干诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;transition:transform 0.2s;display:inline-block}
+.open>.toggle{color:#1a5276}
+.open>.toggle::before{transform:rotate(90deg)}
+
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🌳 十干诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">十干事业速查</div>
+
+<!-- 甲乙木 -->
+<div class="">
+  <div class="toggle">甲乙木</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">适合行业</div>
+      <div class="leaf-result">→ <strong>文化、教育、宗教、东方木相关行业</strong></div>
+    </div>
+    <div class="leaf yellow">
+      <div class="leaf-title">事业特点</div>
+      <div class="leaf-result">→ <strong>有恒心，刚强正直</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 丙丁火 -->
+<div class="">
+  <div class="toggle">丙丁火</div>
+  <div class="children">
+    <div class="leaf orange">
+      <div class="leaf-title">适合行业</div>
+      <div class="leaf-result">→ <strong>服务、光电、南方火相关行业</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">事业特点</div>
+      <div class="leaf-result">→ <strong>积极领导，热情坦率</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 戊己土 -->
+<div class="">
+  <div class="toggle">戊己土</div>
+  <div class="children">
+    <div class="leaf yellow">
+      <div class="leaf-title">适合行业</div>
+      <div class="leaf-result">→ <strong>地产、建筑、农业</strong></div>
+    </div>
+    <div class="leaf green">
+      <div class="leaf-title">事业特点</div>
+      <div class="leaf-result">→ <strong>诚信务实，稳重包容</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 庚辛金 -->
+<div class="">
+  <div class="toggle">庚辛金</div>
+  <div class="children">
+    <div class="leaf orange">
+      <div class="leaf-title">适合行业</div>
+      <div class="leaf-result">→ <strong>金融、机械、西方金相关行业</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">事业特点</div>
+      <div class="leaf-result">→ <strong>刚毅果断，行动力强</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 壬癸水 -->
+<div class="">
+  <div class="toggle">壬癸水</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">适合行业</div>
+      <div class="leaf-result">→ <strong>贸易物流、科技、北方水相关行业</strong></div>
+    </div>
+    <div class="leaf yellow">
+      <div class="leaf-title">事业特点</div>
+      <div class="leaf-result">→ <strong>聪明睿智，胸襟宽广</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">十干富贵格局</div>
+
+<!-- 甲木 -->
+<div class="">
+  <div class="toggle">甲木</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">木火通明格</div>
+      <div class="leaf-result">→ <strong>大富大贵</strong></div>
+    </div>
+    <div class="leaf green">
+      <div class="leaf-title">庚金劈甲格</div>
+      <div class="leaf-result">→ <strong>财官双得</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 乙木 -->
+<div class="">
+  <div class="toggle">乙木</div>
+  <div class="children">
+    <div class="leaf yellow">
+      <div class="leaf-title">乙庚化金格</div>
+      <div class="leaf-result">→ <strong>从势而贵</strong></div>
+    </div>
+    <div class="leaf yellow">
+      <div class="leaf-title">藤萝系甲格</div>
+      <div class="leaf-result">→ <strong>可春可秋</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 丙火 -->
+<div class="">
+  <div class="toggle">丙火</div>
+  <div class="children">
+    <div class="leaf orange">
+      <div class="leaf-title">火火同人格</div>
+      <div class="leaf-result">→ <strong>文武双全</strong></div>
+    </div>
+    <div class="leaf orange">
+      <div class="leaf-title">丙壬合水格</div>
+      <div class="leaf-result">→ <strong>刚柔并济</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 丁火 -->
+<div class="">
+  <div class="toggle">丁火</div>
+  <div class="children">
+    <div class="leaf red">
+      <div class="leaf-title">木火通明格</div>
+      <div class="leaf-result">→ <strong>第一贵格</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">庚劈甲引丁格</div>
+      <div class="leaf-result">→ <strong>富贵密码</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">丁壬化木格</div>
+      <div class="leaf-result">→ <strong>清贵</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 戊土 -->
+<div class="">
+  <div class="toggle">戊土</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">火土夹杂格</div>
+      <div class="leaf-result">→ <strong>厚德载物</strong></div>
+    </div>
+    <div class="leaf green">
+      <div class="leaf-title">戊癸化火格</div>
+      <div class="leaf-result">→ <strong>从化而贵</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 己土 -->
+<div class="">
+  <div class="toggle">己土</div>
+  <div class="children">
+    <div class="leaf yellow">
+      <div class="leaf-title">丙合辛官格</div>
+      <div class="leaf-result">→ <strong>印禄得用</strong></div>
+    </div>
+    <div class="leaf yellow">
+      <div class="leaf-title">甲己化土格</div>
+      <div class="leaf-result">→ <strong>从势而贵</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 庚金 -->
+<div class="">
+  <div class="toggle">庚金</div>
+  <div class="children">
+    <div class="leaf orange">
+      <div class="leaf-title">金白水清格</div>
+      <div class="leaf-result">→ <strong>清贵之命</strong></div>
+    </div>
+    <div class="leaf orange">
+      <div class="leaf-title">丁庚辛金属格</div>
+      <div class="leaf-result">→ <strong>刚柔相济</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 辛金 -->
+<div class="">
+  <div class="toggle">辛金</div>
+  <div class="children">
+    <div class="leaf red">
+      <div class="leaf-title">辛壬化水格</div>
+      <div class="leaf-result">→ <strong>灵活变通</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">丙辛化水格</div>
+      <div class="leaf-result">→ <strong>贵中有富</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 壬水 -->
+<div class="">
+  <div class="toggle">壬水</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">壬丁合木格</div>
+      <div class="leaf-result">→ <strong>刚柔并用</strong></div>
+    </div>
+    <div class="leaf green">
+      <div class="leaf-title">水木相生格</div>
+      <div class="leaf-result">→ <strong>智谋之源</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 癸水 -->
+<div class="">
+  <div class="toggle">癸水</div>
+  <div class="children">
+    <div class="leaf yellow">
+      <div class="leaf-title">癸丁化财格</div>
+      <div class="leaf-result">→ <strong>财星得用</strong></div>
+    </div>
+    <div class="leaf yellow">
+      <div class="leaf-title">癸卯辛格</div>
+      <div class="leaf-result">→ <strong>柔能克刚</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">十干四季喜忌</div>
+
+<!-- 甲木喜忌 -->
+<div class="">
+  <div class="toggle">甲木喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>庚金（劈甲引丁），癸水（润木）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>庚金过旺无壬水</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 乙木喜忌 -->
+<div class="">
+  <div class="toggle">乙木喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>丙火（乙木向阳），癸水（雨露滋）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>辛金过旺无丙火</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 丙火喜忌 -->
+<div class="">
+  <div class="toggle">丙火喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>壬水（调候），庚金（炼金）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无壬水，火炎无制</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 丁火喜忌 -->
+<div class="">
+  <div class="toggle">丁火喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>甲木（灯架），庚金（劈甲引丁）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>丙火夺光，湿木塞火</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 戊土喜忌 -->
+<div class="">
+  <div class="toggle">戊土喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>丙火（暖土），癸水（润土）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无丙火，土寒不长</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 己土喜忌 -->
+<div class="">
+  <div class="toggle">己土喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>丙火，癸水（财滋）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>乙木破格</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 庚金喜忌 -->
+<div class="">
+  <div class="toggle">庚金喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>丁火（锻炼），壬水（泄金）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无丁火，金寒无光</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 辛金喜忌 -->
+<div class="">
+  <div class="toggle">辛金喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>壬水（泄秀），丙火（煅炼）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无壬水，辛软无光</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 壬水喜忌 -->
+<div class="">
+  <div class="toggle">壬水喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>戊土（制水），庚金（生水）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无戊土，水泛木浮</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- 癸水喜忌 -->
+<div class="">
+  <div class="toggle">癸水喜忌</div>
+  <div class="children">
+    <div class="leaf green">
+      <div class="leaf-title">喜</div>
+      <div class="leaf-result">→ <strong>丙火（暖局），辛金（生水）</strong></div>
+    </div>
+    <div class="leaf red">
+      <div class="leaf-title">忌</div>
+      <div class="leaf-result">→ <strong>无丙火，水寒不流</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="note">
+  <strong>使用说明：</strong>点击蓝色文字展开/收起内容。绿色表示吉利，红色表示需要注意，黄色表示中性，橙色表示较好。
+</div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggles = document.querySelectorAll('.toggle');
+  
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const parent = this.parentElement;
+      parent.classList.toggle('open');
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>风水阳宅诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🏠 风水阳宅诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">核心原理</div>
+<div class="leaf yellow"><div class="leaf-title">八字是内因（基因），风水是外因（环境）</div><div class="leaf-result">→ 通过八字可断先天风水，调后天风水；核心：五行平衡</div></div>
+<div><span class="toggle">对应关系</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">天干</div><div class="leaf-result">→ 主外部环境（前方、表面）</div></div>
+<div class="leaf yellow"><div class="leaf-title">地支</div><div class="leaf-result">→ 主内部环境（居住、睡眠）</div></div>
+<div class="leaf yellow"><div class="leaf-title">宫位</div><div class="leaf-result">→ 定方位</div></div>
+</div></div>
+
+<div class="section-title">宫位风水对应</div>
+<div><span class="toggle">年柱</span><div class="children">
+<div class="leaf green"><div class="leaf-title">（年柱宫位）</div><div class="leaf-result">→ 祖辈/早年环境，家传风水</div></div>
+</div></div>
+<div><span class="toggle">月柱</span><div class="children">
+<div class="leaf green"><div class="leaf-title">（月柱宫位）</div><div class="leaf-result">→ 父母/青年环境，家宅整体</div></div>
+</div></div>
+<div><span class="toggle">日柱</span><div class="children">
+<div class="leaf green"><div class="leaf-title">（日柱宫位）</div><div class="leaf-result">→ 自己/配偶/婚姻，夫妻宫核心</div></div>
+</div></div>
+<div><span class="toggle">时柱</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">（时柱宫位）</div><div class="leaf-result">→ 子女/晚年环境，晚年居所</div></div>
+</div></div>
+
+<div class="section-title">喜忌与风水调整</div>
+<div><span class="toggle">风水调整原则</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">补喜用神、泄忌神</div><div class="leaf-result">→ 风水调整以命局喜用神为导向</div></div>
+<div class="leaf yellow"><div class="leaf-title">原局看先天风水</div><div class="leaf-result">→ 大运流年看后天变化</div></div>
+</div></div>
+
+<div class="section-title">床下物品预测</div>
+<div><span class="toggle">实战五步法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">第一步</div><div class="leaf-result">→ 定位核心宫位（日支+时支为主）</div></div>
+<div class="leaf yellow"><div class="leaf-title">第二步</div><div class="leaf-result">→ 分析五行旺衰，确定物品主要类型</div></div>
+<div class="leaf yellow"><div class="leaf-title">第三步</div><div class="leaf-result">→ 解读十神意象，判断藏物动机与物品功能</div></div>
+<div class="leaf yellow"><div class="leaf-title">第四步</div><div class="leaf-result">→ 解析干支符号，确定具体物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">第五步</div><div class="leaf-result">→ 参考神煞暗示，补充物品特殊属性</div></div>
+</div></div>
+
+<div><span class="toggle">十神意象与物品</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">正财旺</div><div class="leaf-result">→ 贵重财物、存折</div></div>
+<div class="leaf yellow"><div class="leaf-title">偏财旺</div><div class="leaf-result">→ 短期关系物品、现金</div></div>
+<div class="leaf yellow"><div class="leaf-title">食神旺</div><div class="leaf-result">→ 零食、玩具、饮食类</div></div>
+<div class="leaf yellow"><div class="leaf-title">伤官旺</div><div class="leaf-result">→ 创意物品、工具</div></div>
+<div class="leaf green"><div class="leaf-title">正印旺</div><div class="leaf-result">→ 书籍、学历证明</div></div>
+<div class="leaf yellow"><div class="leaf-title">偏印旺</div><div class="leaf-result">→ 神秘物品、偏门工具</div></div>
+<div class="leaf red"><div class="leaf-title">官杀旺</div><div class="leaf-result">→ 合同、证书、压力物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">比劫旺</div><div class="leaf-result">→ 旧物、他人赠品</div></div>
+</div></div>
+
+<div><span class="toggle">地支与物品</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">子</div><div class="leaf-result">→ 电子设备、水瓶、流动物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">丑</div><div class="leaf-result">→ 收纳盒、行李箱、储存物</div></div>
+<div class="leaf yellow"><div class="leaf-title">寅</div><div class="leaf-result">→ 木制品、竹制品、绿色物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">卯</div><div class="leaf-result">→ 纺织品、衣物、藤编制品</div></div>
+<div class="leaf yellow"><div class="leaf-title">辰</div><div class="leaf-result">→ 收纳物、书籍、湿地物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">巳</div><div class="leaf-result">→ 电器、陶制品、金属</div></div>
+<div class="leaf yellow"><div class="leaf-title">午</div><div class="leaf-result">→ 装饰品、光明相关物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">未</div><div class="leaf-result">→ 衣物、纺织物、食品</div></div>
+<div class="leaf yellow"><div class="leaf-title">申</div><div class="leaf-result">→ 金属物品、首饰、刀器</div></div>
+<div class="leaf green"><div class="leaf-title">酉</div><div class="leaf-result">→ 首饰盒、贵金属、白色物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">戌</div><div class="leaf-result">→ 金属器皿、收藏品</div></div>
+<div class="leaf yellow"><div class="leaf-title">亥</div><div class="leaf-result">→ 液体物品、黑色物品</div></div>
+</div></div>
+
+<div><span class="toggle">神煞暗示</span><div class="children">
+<div class="leaf orange"><div class="leaf-title">桃花</div><div class="leaf-result">→ 情趣用品、情侣物品</div></div>
+<div class="leaf orange"><div class="leaf-title">墓库</div><div class="leaf-result">→ 大量旧物、封存物品</div></div>
+<div class="leaf orange"><div class="leaf-title">咸池</div><div class="leaf-result">→ 私密情感物品</div></div>
+<div class="leaf yellow"><div class="leaf-title">驿马</div><div class="leaf-result">→ 旅行相关物品</div></div>
+<div class="leaf green"><div class="leaf-title">华盖</div><div class="leaf-result">→ 宗教、艺术、收藏品</div></div>
+</div></div>
+
+<div class="note">速记口诀：日支时支看床下，五行旺衰定类型；十神意象知动机，干支符号辨物品；神煞暗示添细节，墓库桃花各不同。</div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

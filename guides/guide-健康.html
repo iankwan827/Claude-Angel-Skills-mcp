@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字健康诊断指南</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .toggle {
+            color: #2980b9;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 0;
+            margin: 2px 0;
+            transition: all 0.2s;
+        }
+        
+        .toggle:hover {
+            text-decoration: underline;
+        }
+        
+        .toggle::before {
+            content: '▸ ';
+            display: inline-block;
+            transition: transform 0.2s;
+            margin-right: 5px;
+        }
+        
+        .open > .toggle::before {
+            transform: rotate(90deg);
+        }
+        
+        .children {
+            border-left: 2px solid #e8e8f0;
+            margin-left: 15px;
+            padding-left: 15px;
+            display: none;
+        }
+        
+        .open > .children {
+            display: block;
+        }
+        
+        .leaf {
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .leaf-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .leaf-result {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .green {
+            border-left: 4px solid #27ae60;
+            background-color: #f0f9f0;
+        }
+        
+        .red {
+            border-left: 4px solid #e74c3c;
+            background-color: #fdf2f2;
+        }
+        
+        .yellow {
+            border-left: 4px solid #f39c12;
+            background-color: #fef9e7;
+        }
+        
+        .orange {
+            border-left: 4px solid #e67e22;
+            background-color: #fef5e7;
+        }
+        
+        .note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>八字健康诊断指南</h1>
+        <div class="subtitle">基于五行、十神、特殊组合的健康风险评估</div>
+        <div class="note">点击蓝色文字展开/收起判断路径，默认全部收起</div>
+    </div>
+
+    <!-- 一、身材好坏判断 -->
+    <div class="section-title">一、身材好坏判断</div>
+    
+    <div>
+        <span class="toggle">五行与身材 ▸</span>
+        <div class="children">
+            <div class="leaf green">
+                <div class="leaf-title">木旺</div>
+                <div class="leaf-result">身高偏高，四肢修长</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">木弱/过旺</div>
+                <div class="leaf-result">身高偏矮，四肢纤细</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">土旺</div>
+                <div class="leaf-result">体型丰满（燥土=壮实，湿土=虚胖）</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">土弱</div>
+                <div class="leaf-result">偏瘦，脾胃弱</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">火旺</div>
+                <div class="leaf-result">体型紧致不松散</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">火过旺/过弱</div>
+                <div class="leaf-result">过旺则偏瘦；过弱则松散无型</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">金旺</div>
+                <div class="leaf-result">身材挺拔，骨骼清晰</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">金弱</div>
+                <div class="leaf-result">偏瘦或佝偻</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">水旺</div>
+                <div class="leaf-result">体型圆润有肉，皮肤细腻</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">水弱</div>
+                <div class="leaf-result">虚胖（水肿）或干瘪</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">十神与身材 ▸</span>
+        <div class="children">
+            <div class="leaf green">
+                <div class="leaf-title">食神旺</div>
+                <div class="leaf-result">心宽体胖，三围饱满</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">正印旺为用</div>
+                <div class="leaf-result">体型匀称</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">财星旺为用</div>
+                <div class="leaf-result">肌肉结实</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">枭神夺食</div>
+                <div class="leaf-result">消化差，体型干瘪</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">伤官过旺</div>
+                <div class="leaf-result">体型纤瘦</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">官杀过旺身弱</div>
+                <div class="leaf-result">偏瘦，精神差</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 二、断生死铁口直断 -->
+    <div class="section-title">二、断生死铁口直断</div>
+    
+    <div>
+        <span class="toggle">核心组合（应验率90%） ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">枭神夺食</div>
+                <div class="leaf-result">死神信号</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">羊刃逢冲</div>
+                <div class="leaf-result">血光重重</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">官杀混杂</div>
+                <div class="leaf-result">生死信号</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">食伤入墓</div>
+                <div class="leaf-result">生死信号</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">岁运并临 + 忌神被冲克</div>
+                <div class="leaf-result">生死信号</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="note">注意：单一断语不可定论，必须结合原局+大运+流年综合判断</div>
+
+    <!-- 三、血光/意外伤害 -->
+    <div class="section-title">三、血光/意外伤害</div>
+    
+    <div>
+        <span class="toggle">男命将军箭 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">酉戌辰时春不旺</div>
+                <div class="leaf-result">春季出生，时辰为酉、戌、辰时为凶</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">未卯子时夏中亡</div>
+                <div class="leaf-result">夏季出生，时辰为未、卯、子时为凶</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">寅午丑时秋并忌</div>
+                <div class="leaf-result">秋季出生，时辰为寅、午、丑时为凶</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">冬季亥申巳为殃</div>
+                <div class="leaf-result">冬季出生，时辰为亥、申、巳时为凶</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">有箭有弓方为凶</div>
+                <div class="leaf-result">有箭无弓不伤人</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">女命阎罗关 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">主生死婚灾</div>
+                <div class="leaf-result">有煞有冲为真煞，有煞无冲为假煞</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">其他血光断语 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">羊刃逢冲</div>
+                <div class="leaf-result">血光重重</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">伤官挂了角</div>
+                <div class="leaf-result">年时干为伤官 → 不瘤腿就跛脚</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 四、肝胆健康（丁火系统） -->
+    <div class="section-title">四、肝胆健康（丁火系统）</div>
+    
+    <div>
+        <span class="toggle">高风险组合 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">金木交战</div>
+                <div class="leaf-result">庚甲透干+申卯冲 → 肝硬化、肝损伤</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">火多木焚</div>
+                <div class="leaf-result">丙丁火多+木弱无水 → 肝炎、肝癌</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">水多木漂</div>
+                <div class="leaf-result">水旺+木弱无根 → 肝腹水</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">木旺无泄</div>
+                <div class="leaf-result">脂肪肝、情绪病</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">低风险组合 ▸</span>
+        <div class="children">
+            <div class="leaf green">
+                <div class="leaf-title">木气适中+火适度泄</div>
+                <div class="leaf-result">肝疏泄正常</div>
+            </div>
+            <div class="leaf green">
+                <div class="leaf-title">木弱有水扶</div>
+                <div class="leaf-result">肝气虚但无损伤</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">体表特征 ▸</span>
+        <div class="children">
+            <div class="leaf yellow">
+                <div class="leaf-title">丁火有生</div>
+                <div class="leaf-result">背部必有痣；丁火之人必熬夜或抽烟</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 五、女性健康：流产/剖腹产 -->
+    <div class="section-title">五、女性健康：流产/剖腹产</div>
+    
+    <div>
+        <span class="toggle">核心标志：阳刃 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">日坐阳刃（应验率90%+）</div>
+                <div class="leaf-result">日柱为丙午、丁巳、戊午、己巳、壬子、癸亥 → 子宫刀伤风险极高，易刮宫/流产/剖腹产</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">时坐阳刃（应验率80%+）</div>
+                <div class="leaf-result">时柱地支为阳刃 → 子女宫带刀，流产几率大，剖腹产可能性高</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">日时双阳刃（应验率95%+）</div>
+                <div class="leaf-result">日时同时见阳刃 → "日时双阳刃，必生产厄"，非流产即剖腹产</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <span class="toggle">倾向判断 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">倾向流产</div>
+                <div class="leaf-result">日坐阳刃 + 无官杀克制 → 易流产难保胎</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">倾向剖腹产</div>
+                <div class="leaf-result">日坐阳刃 + 有官杀克制；日时卯酉/子午冲 → 胎位不正，必剖腹产</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="note">速记口诀：日坐阳刃子宫伤，时带阳刃产见刀；日时双刃叠，必定生产厄</div>
+
+    <!-- 六、子宫/卵巢健康 -->
+    <div class="section-title">六、子宫/卵巢健康</div>
+    
+    <div>
+        <span class="toggle">子宫健康断语 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">日支子未相穿</div>
+                <div class="leaf-result">子宫易有肌瘤/囊肿，炎症</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">日支丑戌相刑</div>
+                <div class="leaf-result">子宫壁损伤，月经不调</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">辰戌丑未四库全见</div>
+                <div class="leaf-result">子宫/卵巢易长肿瘤</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">日支丙丁辛卯组合</div>
+                <div class="leaf-result">子宫癌/卵巢癌高发</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 七、性相关健康 -->
+    <div class="section-title">七、性相关健康</div>
+    
+    <div>
+        <span class="toggle">性功能健康 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">水弱/无水</div>
+                <div class="leaf-result">肾水不足，性能力下降</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">金旺水寒</div>
+                <div class="leaf-result">性功能障碍</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">火炎土燥</div>
+                <div class="leaf-result">极燥，阴液匮乏</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">纯阴八字</div>
+                <div class="leaf-result">性冷淡</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 八、刀伤/手术 -->
+    <div class="section-title">八、刀伤/手术</div>
+    
+    <div>
+        <span class="toggle">刀伤手术断语 ▸</span>
+        <div class="children">
+            <div class="leaf red">
+                <div class="leaf-title">羊刃遇破</div>
+                <div class="leaf-result">刀伤不断（90%+）</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">阳刃逢冲</div>
+                <div class="leaf-result">血光重重</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">戊土弱遭木局克破</div>
+                <div class="leaf-result">刀伤之灾，易开刀</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">日坐羊刃逢冲（男命）</div>
+                <div class="leaf-result">配偶必见血光手术</div>
+            </div>
+            <div class="leaf red">
+                <div class="leaf-title">日支为阳刃+刀痕</div>
+                <div class="leaf-result">必剖腹产</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 九、痣与体表特征 -->
+    <div class="section-title">九、痣与体表特征</div>
+    
+    <div>
+        <span class="toggle">天干对应部位 ▸</span>
+        <div class="children">
+            <div class="leaf yellow">
+                <div class="leaf-title">甲</div>
+                <div class="leaf-result">背部</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">乙</div>
+                <div class="leaf-result">胸部</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">丙丁</div>
+                <div class="leaf-result">肩部</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">戊己</div>
+                <div class="leaf-result">面部</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">庚辛</div>
+                <div class="leaf-result">腰部</div>
+            </div>
+            <div class="leaf yellow">
+                <div class="leaf-title">壬癸</div>
+                <div class="leaf-result">腹部及四肢</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('.toggle').forEach(function(el){
+            el.addEventListener('click',function(){
+                this.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
+
+    <!-- 来源说明 -->
+    <div class="note" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <strong>来源索引：</strong><br>
+        - 第九节课（身材）<br>
+        - 第十二节课（痣）<br>
+        - 第二十节课（断生死）<br>
+        - 将军箭与阎罗关<br>
+        - 理华千山派28式·健康篇<br>
+        - 第十节课·丁火详解<br>
+        - 第十一节课（流产/剖腹产/子宫/刀伤）<br>
+        <br>
+        <em>注：所有判断路径均从原始文档提取，非编造内容。</em>
+    </div>
+</body>
+</html>

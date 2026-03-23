@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>父母·家人诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>👨‍👩‍👧 父母·家人诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">一、父母断语</div>
+<div class="note"><strong>来源：</strong>理华千山派28式·父母篇</div>
+
+<div><span class="toggle">父亲相关</span><div class="children">
+<div class="leaf red"><div class="leaf-title">年干比肩 + 月干比肩 + 偏财不显</div><div class="leaf-result">→ 父亲早逝</div></div>
+<div class="leaf red"><div class="leaf-title">年干伤官 + 月干偏印（枭神）</div><div class="leaf-result">→ 父亲早逝，母亲身体差</div></div>
+<div class="leaf red"><div class="leaf-title">年柱纳音被月柱纳音所克 + 岁运再遇同克</div><div class="leaf-result">→ 父亲必亡</div></div>
+<div class="leaf red"><div class="leaf-title">财星入墓又见冲 + 岁运见库</div><div class="leaf-result">→ 父寿终</div></div>
+<div class="leaf red"><div class="leaf-title">天克地冲见偏财</div><div class="leaf-result">→ 父亡之期提前</div></div>
+</div></div>
+
+<div><span class="toggle">母亲相关</span><div class="children">
+<div class="leaf red"><div class="leaf-title">年支正财 + 月支正财</div><div class="leaf-result">→ 母亲早丧或父母早离异</div></div>
+<div class="leaf orange"><div class="leaf-title">刑冲破印</div><div class="leaf-result">→ 母走他乡</div></div>
+<div class="leaf red"><div class="leaf-title">二重亡神</div><div class="leaf-result">→ 母先丧</div></div>
+</div></div>
+
+<div><span class="toggle">父母综合</span><div class="children">
+<div class="leaf red"><div class="leaf-title">时杀带花</div><div class="leaf-result">→ 父先亡</div></div>
+</div></div>
+
+<div class="section-title">二、兄弟姐妹断语</div>
+<div class="note"><strong>来源：</strong>理华千山派28式·兄弟姐妹篇</div>
+
+<div><span class="toggle">兄弟夭亡</span><div class="children">
+<div class="leaf red"><div class="leaf-title">月干是七杀 + 他处再出现七杀</div><div class="leaf-result">→ 兄弟中有人夭折</div></div>
+</div></div>
+
+<div><span class="toggle">同胞流落</span><div class="children">
+<div class="leaf orange"><div class="leaf-title">比肩入库，然后逢冲</div><div class="leaf-result">→ 同胞中有人流落在别人家</div></div>
+</div></div>
+
+<div><span class="toggle">无兄弟</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">月上比劫怕透天</div><div class="leaf-result">→ 无有兄弟，形影单</div></div>
+</div></div>
+
+<div><span class="toggle">兄弟有疾</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">比劫不透不夭折，但有疾或偏瘫</div><div class="leaf-result">→ 兄弟姐妹有刑疾</div></div>
+</div></div>
+
+<div><span class="toggle">兄弟分离</span><div class="children">
+<div class="leaf orange"><div class="leaf-title">年月刑冲</div><div class="leaf-result">→ 父东子西把家搬</div></div>
+</div></div>
+
+<div><span class="toggle">兄弟反目</span><div class="children">
+<div class="leaf red"><div class="leaf-title">比劫重重克财星</div><div class="leaf-result">→ 兄弟反目成仇</div></div>
+</div></div>
+
+<div class="note"><strong>说明：</strong>以上断语均来自理华千山派28式。父母与兄弟姐妹的缘分深浅，需结合八字全局通盘判断，不可单凭一条断语定论。</div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

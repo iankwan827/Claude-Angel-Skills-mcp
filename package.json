@@ -1,0 +1,13 @@
+{
+  "name": "claude-angel-skills-mcp",
+  "version": "1.0.0",
+  "description": "Claude Angel Skills MCP Server - 八字命理技能服务",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字性格诊断指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e8e8f0;
+        }
+        
+        .toggle {
+            color: #2980b9;
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 0;
+            transition: all 0.2s ease;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .toggle:hover {
+            text-decoration: underline;
+        }
+        
+        .toggle::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            transition: transform 0.2s ease;
+        }
+        
+        .open > .toggle::before {
+            transform: rotate(90deg);
+        }
+        
+        .children {
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #e8e8f0;
+            display: none;
+        }
+        
+        .open > .children {
+            display: block;
+        }
+        
+        .leaf {
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #ddd;
+        }
+        
+        .leaf-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .leaf-result {
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .green {
+            border-left-color: #27ae60;
+            background-color: #e8f6ef;
+        }
+        
+        .red {
+            border-left-color: #e74c3c;
+            background-color: #fdedec;
+        }
+        
+        .yellow {
+            border-left-color: #f39c12;
+            background-color: #fef5e7;
+        }
+        
+        .orange {
+            border-left-color: #e67e22;
+            background-color: #fef9e7;
+        }
+        
+        .note {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .note strong {
+            color: #2c3e50;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e8e8f0;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>八字性格诊断指南</h1>
+        <div class="subtitle">基于两头挂与十干日元性格分析</div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">一、两头挂性格分析</div>
+        <div>
+            <span class="toggle">两头挂命理断语 ▸</span>
+            <div class="children">
+                <div>
+                    <span class="toggle">正印/偏印两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf green">
+                            <div class="leaf-title">印绶两头挂，必定慈善人</div>
+                            <div class="leaf-result">善良有爱心，适合文化/教育/宗教/慈善行业；女性异性缘好但婚姻可能不顺（印克食伤不利子息）</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">伤官两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">伤官两头挂，亲情剩不下</div>
+                            <div class="leaf-result">聪明口才好，但六亲缘薄，与家人关系疏远；女性婚姻多波折</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">食神两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf green">
+                            <div class="leaf-title">食神两头挂，吃喝走天下</div>
+                            <div class="leaf-result">口福好，多才多艺，适合餐饮/表演/技艺行业，人缘佳</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">七杀两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">七杀两头挂，到老无后/官非定无后</div>
+                            <div class="leaf-result">一生多灾，易有官非诉讼；子嗣缘分薄</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">偏财/正财两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf yellow">
+                            <div class="leaf-title">财星两头挂，慷慨离家人</div>
+                            <div class="leaf-result">慷慨大方，可能远离家乡发展</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">比肩/劫财两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">比劫两头挂，损财是非来</div>
+                            <div class="leaf-result">财来财去，因朋友破财，与人竞争激烈</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">正官两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf green">
+                            <div class="leaf-title">正官两头挂，富贵又绵长</div>
+                            <div class="leaf-result">事业稳定，富贵长久，社会地位高</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">偏印（枭神）两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">枭神两头挂，寡言人狡诈</div>
+                            <div class="leaf-result">寡言少语，心思缜密，可能多计谋</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">二、十干日元性格</div>
+        <div>
+            <span class="toggle">甲木（阳木）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">参天大树，向阳生长</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>有恒心、有毅力、刚强正直<br>
+                        <strong>负面：</strong>固执、不服输、不懂示弱
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">乙木（阴木）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">藤萝花草，柔韧弯曲</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>温柔变通、适应力强、细腻敏感<br>
+                        <strong>负面：</strong>优柔寡断、依赖性强、敏感多疑
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">丙火（阳火）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">太阳之火，热烈光明</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>积极主动、坦率直接、领导力强<br>
+                        <strong>负面：</strong>暴烈冲动、缺耐心、燥热
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">丁火（阴火）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">烛火/星光，万家灯火</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>心思缜密、温柔坚韧、文明善感<br>
+                        <strong>负面：</strong>敏感多疑、优柔寡断、易被掩盖
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">戊土（阳土）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">高山厚土，稳定包容</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>诚信可靠、责任感强、顾全大局<br>
+                        <strong>负面：</strong>固执保守、不善变通
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">己土（阴土）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">田园之土，滋养万物</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>包容忍耐、务实勤奋、善于调和<br>
+                        <strong>负面：</strong>内心矛盾、缺乏决断
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">庚金（阳金）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">刀剑之金，刚健锐利</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>刚毅果断、行动力强、有魄力、正义凛然<br>
+                        <strong>负面：</strong>刚愎自用、言辞犀利、好胜心强
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">辛金（阴金）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">珠玉之金，精致珍贵</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>细腻敏锐、审美眼光、文雅精致<br>
+                        <strong>负面：</strong>挑剔计较、过于敏感
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">壬水（阳水）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">江河湖海，奔腾不息</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>聪明睿智、胸怀宽广、勇敢果断<br>
+                        <strong>负面：</strong>冲动鲁莽、缺乏耐心
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="toggle">癸水（阴水）▸</span>
+            <div class="children">
+                <div class="leaf">
+                    <div class="leaf-title">雨露晨雾，滋润万物</div>
+                    <div class="leaf-result">
+                        <strong>正面：</strong>聪明睿智、情感细腻、坚韧不拔<br>
+                        <strong>负面：</strong>优柔寡断、含蓄内敛
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">三、性格与婚恋/社交</div>
+        <div>
+            <span class="toggle">两头挂性格实战应用 ▸</span>
+            <div class="children">
+                <div>
+                    <span class="toggle">印星两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf yellow">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">善良慈悲，但生活多波折</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">伤官两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">六亲缘薄，言语犀利</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">食神两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf green">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">吃喝走天下，人缘好</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">七杀两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">一生多灾，官非不断</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">财星两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf yellow">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">慷慨大方，可能远离家乡</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">比劫两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf red">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">易因朋友破财</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="toggle">正官两头挂 ▸</span>
+                    <div class="children">
+                        <div class="leaf green">
+                            <div class="leaf-title">性格表现</div>
+                            <div class="leaf-result">事业稳定，福禄长久</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="note">
+        <strong>使用说明：</strong><br>
+        1. 点击蓝色文字可展开/收起详细内容<br>
+        2. 颜色含义：<span style="color:#27ae60">绿色-好/加分项</span>，<span style="color:#e74c3c">红色-差/减分项</span>，<span style="color:#f39c12">黄色-中性/一般</span><br>
+        3. 两头挂 = 年干和时干出现同一十神<br>
+        4. 本指南基于八字命理断语，仅供参考
+    </div>
+    
+    <div class="footer">
+        <p>八字性格诊断指南 · 基于《07_性格.md》内容制作</p>
+        <p>制作时间：2026年3月23日</p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.toggle').forEach(function(el) {
+                el.addEventListener('click', function() {
+                    this.parentElement.classList.toggle('open');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

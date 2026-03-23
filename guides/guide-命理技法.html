@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命理技法诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🔮 命理技法诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">身强身弱判断</div>
+<div><span class="toggle">三个来源</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">得令</div><div class="leaf-result">→ 得月令本气生助</div></div>
+<div class="leaf yellow"><div class="leaf-title">得地</div><div class="leaf-result">→ 得非月令地支生助</div></div>
+<div class="leaf yellow"><div class="leaf-title">得助</div><div class="leaf-result">→ 天干有同类帮身</div></div>
+</div></div>
+<div><span class="toggle">同党 / 异党</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">同党</div><div class="leaf-result">→ 印枭、劫比</div></div>
+<div class="leaf yellow"><div class="leaf-title">异党</div><div class="leaf-result">→ 官杀、财才、食伤</div></div>
+</div></div>
+<div><span class="toggle">倾向</span><div class="children">
+<div class="leaf green"><div class="leaf-title">身强倾向</div><div class="leaf-result">→ 计划能力强、有组织力、领导力强、精力充沛</div></div>
+<div class="leaf yellow"><div class="leaf-title">身弱倾向</div><div class="leaf-result">→ 专业知识、技术能力、科学研究、艺术创造、精细工作</div></div>
+</div></div>
+
+<div class="section-title">十二地支藏干</div>
+<div><span class="toggle">藏干速查</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">子</div><div class="leaf-result">→ 本气癸水</div></div>
+<div class="leaf yellow"><div class="leaf-title">丑</div><div class="leaf-result">→ 本气己土，中气癸水，余气辛金</div></div>
+<div class="leaf yellow"><div class="leaf-title">寅</div><div class="leaf-result">→ 本气甲木，中气丙火，余气戊土</div></div>
+<div class="leaf yellow"><div class="leaf-title">卯</div><div class="leaf-result">→ 本气乙木</div></div>
+<div class="leaf yellow"><div class="leaf-title">辰</div><div class="leaf-result">→ 本气戊土，中气乙木，余气癸水</div></div>
+<div class="leaf yellow"><div class="leaf-title">巳</div><div class="leaf-result">→ 本气丙火，中气庚金，余气戊土</div></div>
+<div class="leaf yellow"><div class="leaf-title">午</div><div class="leaf-result">→ 本气丁火，中气己土</div></div>
+<div class="leaf yellow"><div class="leaf-title">未</div><div class="leaf-result">→ 本气己土，中气丁火，余气乙木</div></div>
+<div class="leaf yellow"><div class="leaf-title">申</div><div class="leaf-result">→ 本气庚金，中气壬水，余气戊土</div></div>
+<div class="leaf yellow"><div class="leaf-title">酉</div><div class="leaf-result">→ 本气辛金</div></div>
+<div class="leaf yellow"><div class="leaf-title">戌</div><div class="leaf-result">→ 本气戊土，中气丁火，余气辛金</div></div>
+<div class="leaf yellow"><div class="leaf-title">亥</div><div class="leaf-result">→ 本气壬水，中气甲木</div></div>
+</div></div>
+<div class="leaf green"><div class="leaf-title">透干原则</div><div class="leaf-result">→ 藏干在天干透出时，能量倍增，直接影响命局；不透则影响隐蔽，多体现在潜意识。</div></div>
+
+<div class="section-title">用神忌神喜用神</div>
+<div><span class="toggle">五大核心概念</span><div class="children">
+<div class="leaf green"><div class="leaf-title">用神</div><div class="leaf-result">→ 核心"药方"，治命局失衡的关键五行</div></div>
+<div class="leaf green"><div class="leaf-title">喜神</div><div class="leaf-result">→ 辅助用神的五行，生助用神</div></div>
+<div class="leaf red"><div class="leaf-title">忌神</div><div class="leaf-result">→ 直接克用神的五行，病症根源</div></div>
+<div class="leaf yellow"><div class="leaf-title">仇神</div><div class="leaf-result">→ 间接助忌神的五行，忌神的帮凶</div></div>
+<div class="leaf yellow"><div class="leaf-title">闲神</div><div class="leaf-result">→ 中性，可转化为喜神或忌神</div></div>
+</div></div>
+
+<div><span class="toggle">用神四大取法</span><div class="children">
+<div><span class="toggle">1. 扶抑取用法（最常用）</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">身旺</div><div class="leaf-result">→ 取克泄耗为用（官杀克、食伤泄、财星耗）</div></div>
+<div class="leaf yellow"><div class="leaf-title">身弱</div><div class="leaf-result">→ 取生助为用（印星生、比劫助）</div></div>
+</div></div>
+<div><span class="toggle">2. 调侯取用法（优先于扶抑）</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">生于夏月（巳午未）</div><div class="leaf-result">→ 取水调候</div></div>
+<div class="leaf yellow"><div class="leaf-title">生于冬月（亥子丑）</div><div class="leaf-result">→ 取火调候</div></div>
+<div class="leaf yellow"><div class="leaf-title">生于四季（辰戌丑未）</div><div class="leaf-result">→ 取木/金/水调燥湿</div></div>
+</div></div>
+<div><span class="toggle">3. 通关取用法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">金木相战</div><div class="leaf-result">→ 取水通关</div></div>
+<div class="leaf yellow"><div class="leaf-title">水火相战</div><div class="leaf-result">→ 取木通关</div></div>
+<div class="leaf yellow"><div class="leaf-title">土水相战</div><div class="leaf-result">→ 取金通关</div></div>
+</div></div>
+<div><span class="toggle">4. 病药取用法</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">土多金埋</div><div class="leaf-result">→ 病在土旺，药为木/金/水</div></div>
+<div class="leaf yellow"><div class="leaf-title">木多火塞</div><div class="leaf-result">→ 病在木旺，药为金/火/土</div></div>
+<div class="leaf yellow"><div class="leaf-title">水多木漂</div><div class="leaf-result">→ 病在水旺，药为土/木/火</div></div>
+</div></div>
+</div></div>
+
+<div class="section-title">天克地冲</div>
+<div><span class="toggle">定义</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">天克 = 天干相克</div><div class="leaf-result">→ 主明面冲突</div></div>
+<div class="leaf yellow"><div class="leaf-title">地冲 = 地支六冲</div><div class="leaf-result">→ 主根基动摇</div></div>
+<div class="leaf red"><div class="leaf-title">两者同时发生</div><div class="leaf-result">→ 天地双煞，最剧烈</div></div>
+</div></div>
+<div class="leaf red"><div class="leaf-title">婚灾应期</div><div class="leaf-result">→ 冲克夫妻宫/配偶星 → 婚姻变动</div></div>
+
+<div class="section-title">十二长生</div>
+<div><span class="toggle">十二状态</span><div class="children">
+<div class="leaf green"><div class="leaf-title">长生</div><div class="leaf-result">→ 新生</div></div>
+<div class="leaf yellow"><div class="leaf-title">沐浴</div><div class="leaf-result">→ 性敏感区</div></div>
+<div class="leaf yellow"><div class="leaf-title">冠带</div><div class="leaf-result">→ 成长</div></div>
+<div class="leaf green"><div class="leaf-title">临官 / 帝旺</div><div class="leaf-result">→ 主强（禄/刃）</div></div>
+<div class="leaf yellow"><div class="leaf-title">衰</div><div class="leaf-result">→ 走下坡</div></div>
+<div class="leaf red"><div class="leaf-title">病</div><div class="leaf-result">→ 衰弱</div></div>
+<div class="leaf red"><div class="leaf-title">死</div><div class="leaf-result">→ 极弱</div></div>
+<div class="leaf yellow"><div class="leaf-title">墓</div><div class="leaf-result">→ 收藏，入库</div></div>
+<div class="leaf yellow"><div class="leaf-title">绝</div><div class="leaf-result">→ 绝地</div></div>
+<div class="leaf yellow"><div class="leaf-title">胎</div><div class="leaf-result">→ 孕育</div></div>
+<div class="leaf yellow"><div class="leaf-title">养</div><div class="leaf-result">→ 成形</div></div>
+</div></div>
+<div class="note"><strong>速记：</strong>阳干顺行，阴干逆行，火土共长生。</div>
+
+<div class="section-title">地支关系优先级</div>
+<div class="leaf red"><div class="leaf-title">三会局</div><div class="leaf-result">→ 力量是三合局的1.5倍，优先级最高</div></div>
+<div class="leaf green"><div class="leaf-title">三合局</div><div class="leaf-result">→ 申子辰（水局），亥卯未（木局），寅午戌（火局），巳酉丑（金局）</div></div>
+<div class="leaf yellow"><div class="leaf-title">六合</div><div class="leaf-result">→ 子丑合土，寅亥合木，卯戌合火，辰酉合金，巳申合水，午未合火</div></div>
+<div class="leaf yellow"><div class="leaf-title">六冲</div><div class="leaf-result">→ 子午冲，丑未冲，寅申冲，卯酉冲，辰戌冲，巳亥冲</div></div>
+<div class="leaf yellow"><div class="leaf-title">三刑</div><div class="leaf-result">→ 无恩刑（寅巳申），恃势刑（丑戌未），自刑（辰辰/午午/酉酉/亥亥）</div></div>
+<div class="leaf yellow"><div class="leaf-title">六害</div><div class="leaf-result">→ 子未害，丑午害，寅巳害，卯辰害，申亥害，酉戌害</div></div>
+<div class="leaf yellow"><div class="leaf-title">六破</div><div class="leaf-result">→ 子卯相破，卯午相破，子酉相破，丑辰相破，寅亥相破，巳申相破，未戌相破</div></div>
+
+<div class="section-title">空亡</div>
+<div><span class="toggle">速查口诀</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">甲子旬中戌亥空</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">甲戌旬中申酉空</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">甲申旬中午未空</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">甲午旬中辰巳空</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">甲辰旬中寅卯空</div><div class="leaf-result"></div></div>
+<div class="leaf yellow"><div class="leaf-title">甲寅旬中子丑空</div><div class="leaf-result"></div></div>
+</div></div>
+<div><span class="toggle">应事规律</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">吉神逢空</div><div class="leaf-result">→ 减吉</div></div>
+<div class="leaf yellow"><div class="leaf-title">凶神逢空</div><div class="leaf-result">→ 减凶</div></div>
+<div class="leaf yellow"><div class="leaf-title">用神空</div><div class="leaf-result">→ 劳碌</div></div>
+<div class="leaf green"><div class="leaf-title">忌神空</div><div class="leaf-result">→ 平顺</div></div>
+</div></div>
+
+<div class="section-title">大运流年</div>
+<div><span class="toggle">大运类型适合做什么</span><div class="children">
+<div class="leaf green"><div class="leaf-title">官杀大运</div><div class="leaf-result">→ 求职、晋升、创业（95%）</div></div>
+<div class="leaf green"><div class="leaf-title">印星大运</div><div class="leaf-result">→ 充电、考证、积累人脉（95%）</div></div>
+<div class="leaf green"><div class="leaf-title">财星大运</div><div class="leaf-result">→ 拓展业务，投资（95%）</div></div>
+<div class="leaf yellow"><div class="leaf-title">食伤大运</div><div class="leaf-result">→ 转型，做顾问（90%）</div></div>
+</div></div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

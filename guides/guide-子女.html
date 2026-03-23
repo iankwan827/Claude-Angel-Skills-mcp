@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>子女诊断指南</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#222;line-height:1.8;padding:20px}
+.container{max-width:700px;margin:0 auto}
+h1{font-size:1.4rem;color:#1a1a2e;margin-bottom:6px}
+.subtitle{color:#666;font-size:0.85rem;margin-bottom:20px}
+.toggle{cursor:pointer;color:#2980b9;font-weight:500;user-select:none;display:block}
+.toggle:hover{color:#1a5276;text-decoration:underline}
+.toggle::before{content:"▸ ";font-size:0.8em;color:#aaa;display:inline-block}
+.children{margin-left:16px;padding-left:12px;border-left:2px solid #e8e8f0;display:none}
+.open>.children{display:block}
+.open>.toggle::before{content:"▾ ";display:inline-block}
+.open>.toggle{color:#1a5276}
+.leaf{margin:6px 0;padding:8px 12px;border-radius:8px;font-size:0.88rem;background:#fff;border-left:3px solid #4a4a6a}
+.leaf.green{border-left-color:#27ae60;background:#f0faf4}
+.leaf.red{border-left-color:#e74c3c;background:#fef5f5}
+.leaf.yellow{border-left-color:#f39c12;background:#fffbf0}
+.leaf.orange{border-left-color:#e67e22;background:#fff8f0}
+.leaf-title{font-weight:600;color:#1a1a2e;font-size:0.88rem}
+.leaf-result{background:#1a1a2e;color:#a0d8ef;border-radius:6px;padding:6px 10px;font-size:0.84rem;margin-top:5px}
+.section-title{font-size:0.72rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 4px 4px}
+.note{background:#fffde7;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.85rem;color:#555;margin-top:16px}
+.note strong{color:#e65100}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>👶 子女诊断指南</h1>
+<p class="subtitle">点蓝色文字展开，逐层选择符合的条件</p>
+
+<div class="section-title">基础信息</div>
+<div class="open"><span class="toggle">性别</span><div class="children">
+<div class="leaf yellow"><div class="leaf-title">男命</div><div class="leaf-result">→ 正官=女儿，七杀=儿子</div></div>
+<div class="leaf yellow"><div class="leaf-title">女命</div><div class="leaf-result">→ 食神=女儿，伤官=儿子</div></div>
+</div></div>
+
+<div class="section-title">子女缘分</div>
+<div class="open"><span class="toggle">星宫同旺</span><div class="children">
+<div class="leaf green"><div class="leaf-title">子女星旺相 + 子女宫为喜用神</div><div class="leaf-result">→ 子女优秀孝顺，晚年幸福</div></div>
+</div></div>
+<div class="open"><span class="toggle">星宫相克</span><div class="children">
+<div class="leaf red"><div class="leaf-title">子女星与子女宫刑冲克害</div><div class="leaf-result">→ 缘分薄，关系不和睦</div></div>
+</div></div>
+<div class="open"><span class="toggle">星宫空亡</span><div class="children">
+<div class="leaf red"><div class="leaf-title">子女星或子女宫空亡</div><div class="leaf-result">→ 子女可能夭折、流产，或聚少离多</div></div>
+</div></div>
+
+<div class="section-title">子女星状态判断</div>
+<div><span class="toggle">食神 / 伤官</span><div class="children">
+<div><span class="toggle">旺</span><div class="children">
+<div class="leaf green"><div class="leaf-title">食神旺相</div><div class="leaf-result">→ 子女健康孝顺</div></div>
+<div class="leaf green"><div class="leaf-title">伤官旺透</div><div class="leaf-result">→ 子女才华出众</div></div>
+<div class="leaf green"><div class="leaf-title">时支长生</div><div class="leaf-result">→ 子女多且健康</div></div>
+</div></div>
+<div><span class="toggle">衰 / 弱</span><div class="children">
+<div class="leaf red"><div class="leaf-title">时支墓绝</div><div class="leaf-result">→ 子女少且体弱</div></div>
+<div class="leaf red"><div class="leaf-title">印星旺克食伤（女命）</div><div class="leaf-result">→ 易无子或子女夭折</div></div>
+</div></div>
+<div><span class="toggle">大运补局（重要！）</span><div class="children">
+<div class="leaf green"><div class="leaf-title">食神/伤官不在十神表，但大运地支含其根</div><div class="leaf-result">→ 该运有实质子息缘分（大运是主战场）</div></div>
+<div class="leaf green"><div class="leaf-title">壬子运（2014-2024）</div><div class="leaf-result">→ 壬=伤官（儿子），子=壬之根 → 伤官有根有力（实战验证！）</div></div>
+<div class="leaf yellow"><div class="leaf-title">癸丑运（2024-2034）</div><div class="leaf-result">→ 癸=食神/伤官，丑含根 → 整步运都有子息能量</div></div>
+</div></div>
+</div></div>
+
+<div class="section-title">头胎性别</div>
+<div><span class="toggle">男命</span><div class="children">
+<div class="leaf green"><div class="leaf-title">时干食神 + 月令再有食神</div><div class="leaf-result">→ 头胎多为女孩（若为男孩不能存活）</div></div>
+<div class="leaf green"><div class="leaf-title">时柱偏财旺</div><div class="leaf-result">→ 头胎多为男孩</div></div>
+<div class="leaf yellow"><div class="leaf-title">反之</div><div class="leaf-result">→ 则为女孩（90%+准确率）</div></div>
+</div></div>
+<div><span class="toggle">女命</span><div class="children">
+<div class="leaf green"><div class="leaf-title">时柱正官旺</div><div class="leaf-result">→ 头胎多为男孩</div></div>
+<div class="leaf yellow"><div class="leaf-title">反之</div><div class="leaf-result">→ 则为女孩（90%+准确率）</div></div>
+</div></div>
+
+<div class="section-title">子女品质与成就</div>
+<div><span class="toggle">时柱为喜用神</span><div class="children"><div class="leaf green"><div class="leaf-title">（时柱为喜用神）</div><div class="leaf-result">→ 子女优秀孝顺</div></div></div></div>
+<div><span class="toggle">时上七杀有制</span><div class="children"><div class="leaf green"><div class="leaf-title">（七杀有制化）</div><div class="leaf-result">→ 晚年生贵子</div></div></div></div>
+<div><span class="toggle">食神生财</span><div class="children"><div class="leaf green"><div class="leaf-title">（食神生财格局）</div><div class="leaf-result">→ 子女富贵双全</div></div></div></div>
+<div><span class="toggle">伤官佩印</span><div class="children"><div class="leaf green"><div class="leaf-title">（伤官有印克制）</div><div class="leaf-result">→ 子女才华横溢</div></div></div></div>
+<div><span class="toggle">时柱合日柱</span><div class="children"><div class="leaf green"><div class="leaf-title">（时柱与日柱相合）</div><div class="leaf-result">→ 子女孝顺贴心</div></div></div></div>
+<div><span class="toggle">时柱刑冲日柱</span><div class="children"><div class="leaf red"><div class="leaf-title">（时柱刑冲日柱）</div><div class="leaf-result">→ 子女叛逆难管</div></div></div></div>
+<div><span class="toggle">子女星被合</span><div class="children"><div class="leaf yellow"><div class="leaf-title">（子女星被合）</div><div class="leaf-result">→ 子女外迁或过继</div></div></div></div>
+<div><span class="toggle">子女宫空亡</span><div class="children"><div class="leaf red"><div class="leaf-title">（时柱空亡）</div><div class="leaf-result">→ 子女聚少离多</div></div></div></div>
+
+<div class="section-title">生育时机</div>
+<div><span class="toggle">大运走食伤 + 流年逢财星（女命）</span><div class="children"><div class="leaf green"><div class="leaf-title">（食伤运+财星流年）</div><div class="leaf-result">→ 必生贵子</div></div></div></div>
+<div><span class="toggle">大运走官杀 + 流年逢印星（男命）</span><div class="children"><div class="leaf green"><div class="leaf-title">（官杀运+印星流年）</div><div class="leaf-result">→ 易生子女</div></div></div></div>
+<div><span class="toggle">子女星逢长生 + 流年引动</span><div class="children"><div class="leaf green"><div class="leaf-title">（子女星长生+流年引动）</div><div class="leaf-result">→ 易怀孕</div></div></div></div>
+
+<div class="section-title">流年判断</div>
+<div><span class="toggle">哪年加强食神/伤官</span><div class="children">
+<div class="leaf green"><div class="leaf-title">庚子 / 辛丑 / 壬寅</div><div class="leaf-result">→ 生育能量强（最佳时机）</div></div>
+<div class="leaf yellow"><div class="leaf-title">其他加强流年</div><div class="leaf-result">→ 有生育能量，可以成</div></div>
+<div class="leaf red"><div class="leaf-title">流年破根（被冲克）</div><div class="leaf-result">→ 能量受损，着床不稳，注意保胎</div></div>
+</div></div>
+
+<div class="note"><strong>实战验证：</strong>1987女命（辛未日主），壬子运期间（2014-2024），壬=伤官（儿子），子=壬之根 → 伤官有根有力。老大2019年（庚子）怀孕，老二2024年（癸卯）怀孕，2025年4月生。</div>
+
+</div>
+<script>
+document.querySelectorAll('.toggle').forEach(function(el){
+  el.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
